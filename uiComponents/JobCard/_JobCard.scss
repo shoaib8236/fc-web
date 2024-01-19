@@ -1,0 +1,16 @@
+.job-card {
+    background: rgba(246, 246, 246, 1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+
+    .title-wrapper {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      .title {
+        color: red;
+      }
+    }
+  }

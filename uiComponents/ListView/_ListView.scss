@@ -1,0 +1,18 @@
+.wrapper-chip {
+  // display: flex;
+  // flex-wrap: wrap;
+  .chip_items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .chip-box {
+    margin: 2px 10px !important;
+  }
+}
+
+.food_menu_inner {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100%;
+}

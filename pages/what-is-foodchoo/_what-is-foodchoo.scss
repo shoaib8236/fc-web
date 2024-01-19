@@ -1,0 +1,60 @@
+.layout {
+  .white {
+    color: white;
+  }
+  &.i-am-guide {
+    .her-section {
+      min-height: 400px;
+      max-height: 400px;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+    .container {
+      .row {
+        .spacing-top-wfc {
+          margin-top: 50px;
+          margin-bottom: 50px;
+        }
+      }
+    }
+    .main-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      .content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .establishment-panel {
+      margin: 100px 20px;
+      text-align: center;
+      .content {
+      }
+    }
+    .column-alignment {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    .spacing {
+      margin-bottom: 80px;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .layout.i-am-guide {
+    .her-section {
+      background-size: cover;
+      min-height: 300px;
+      max-height: 300px;
+    }
+  }
+}

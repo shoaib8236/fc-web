@@ -1,0 +1,132 @@
+.i-am-contact {
+  padding: 50px 0px;
+  background: url(../../assets/images/sample/recLeft.png),
+    url(../../assets/images/sample/recRight.png);
+  background-position: 0% 0px, 100% 200px;
+  background-repeat: no-repeat, no-repeat;
+
+  .contact-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 20px;
+
+    .danger {
+      color: $theme-color;
+      font-size: 14px;
+      font-style: italic;
+      font-weight: 500;
+    }
+
+    form {
+      width: 100%;
+      max-width: 600px;
+      .btn-box {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 65px;
+        margin-top: 30px;
+        button {
+          background: #c6181f;
+          border-radius: 20px;
+          color: white;
+          padding: 6px 20px;
+          font-size: 16px;
+
+          &.disabled_btn {
+            background: rgb(162, 160, 160);
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+    .input-field {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 20px;
+
+      .ant-select {
+        display: flex;
+        align-items: center;
+        box-shadow: 1px 1px 10px 1px rgb(0 0 0 / 20%);
+        font-size: 14px;
+        border-radius: 6px;
+        width: 100%;
+        padding: 14px 0px;
+        height: 50px;
+      }
+      .style-input {
+        box-shadow: 1px 1px 10px 1px rgb(0 0 0 / 20%);
+        font-size: 14px;
+        border-radius: 6px;
+        width: 100%;
+        padding: 14px 16px;
+        &:focus {
+          outline: none;
+        }
+      }
+      .textarea {
+        box-shadow: 1px 1px 10px 1px rgb(0 0 0 / 20%);
+        font-size: 14px;
+        border-radius: 6px;
+        width: 100%;
+        padding: 5px 16px;
+        border: none;
+        min-height: 200px;
+        &:focus {
+          outline: none;
+        }
+      }
+      .counter_textarea {
+        margin-left: auto;
+        width: max-content;
+        position: relative;
+      }
+    }
+  }
+
+  .label_wrapper {
+    position: relative;
+    .req_mark {
+      position: absolute;
+      left: -25px;
+      top: 4px;
+      width: 16px;
+    }
+  }
+
+  .c_text_area {
+    position: relative;
+    textarea {
+      box-shadow: 1px 1px 10px 1px #00000033 !important;
+      border: none !important;
+      border-radius: 6px;
+      min-height: 150px;
+    }
+  }
+  .ant-input-textarea-show-count::after {
+    position: absolute;
+    bottom: 0;
+    right: 12px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
+.ant-select {
+  .ant-select-selector {
+    box-shadow: 0 0 10px #d4d4d4 !important;
+    min-height: 50px;
+    background: #ffffff !important;
+    border: none !important;
+    display: flex;
+    align-items: center;
+    border-radius: 6px !important;
+    .ant-select-selection-search {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.sneakBar_wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  width: max-content;
+//   min-height: 150px;
+//   min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #d4d4d4;
+  transition: 0.2s;
+  opacity: 0;
+
+
+
+  &.hide_sneakBar {
+    animation: hideSneakBar 0.2s both;
+  }
+  &.show_sneakBar {
+    animation: moveSneakBar 0.2s both;
+  }
+}
+
+@keyframes moveSneakBar {
+  0% {
+    transform: translate(-50%, -50%) scale(0.6);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes hideSneakBar {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0.6);
+    opacity: 0;
+  }
+}

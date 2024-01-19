@@ -1,0 +1,134 @@
+.data_safety {
+  padding-top: 60px;
+
+  .page_banner {
+    height: 100svh;
+    background-size: 100% 80%;
+    background-position: top;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+
+    .container {
+      text-align: center;
+
+      .input_wrap {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 30px;
+        input {
+          height: 40px;
+          flex: 1;
+          max-width: 300px;
+          border-radius: 20px;
+          padding: 0 15px;
+          font-size: 16px;
+        }
+
+        button {
+          height: 40px;
+          border-radius: 100px;
+          background-color: #fff;
+          padding: 10px 25px;
+          font-size: 16px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          &:hover {
+            opacity: 0.8;
+          }
+
+          &:active {
+            opacity: 1;
+          }
+        }
+      }
+
+      h1 {
+        font-size: 44px;
+        color: #fff;
+      }
+      p {
+        color: #fff !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .data_safety {
+    padding-top: 60px;
+
+    .page_banner {
+      height: 100svh;
+
+      background-size: cover;
+      background-position: top;
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding-top: 40px;
+
+      .container {
+        text-align: center;
+
+        .input_wrap {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          margin-top: 30px;
+          input {
+            height: 40px;
+            flex: 1;
+            max-width: 300px;
+            border-radius: 20px;
+            padding: 0 15px;
+            font-size: 16px;
+
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+              -webkit-appearance: none;
+              margin: 0;
+            }
+          }
+
+          button {
+            height: 40px;
+            border-radius: 100px;
+            background-color: #fff;
+            padding: 10px 25px;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:hover {
+              opacity: 0.8;
+            }
+
+            &:active {
+              opacity: 1;
+            }
+          }
+        }
+
+        h1 {
+          font-size: 44px;
+          color: #fff;
+        }
+        p {
+          color: #fff !important;
+        }
+      }
+    }
+  }
+}

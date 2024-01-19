@@ -1,0 +1,160 @@
+.navbar {
+  width: 100vw;
+  height: 65px;
+  max-width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  font-size: 62.5%;
+  box-sizing: border-box;
+  padding: 0 60px;
+  z-index: 999;
+  transition: background-color 300ms ease-out;
+  background-color: lightsalmon;
+  box-shadow: 0 3px 5px -2px gray;
+}
+
+.logoArea {
+  cursor: pointer;
+}
+
+// .logo {
+//   width: 20em;
+// }
+
+.menuItemArea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: -46px;
+  .navSimpleItems {
+    display: flex;
+    align-items: center;
+
+    .navDropdown {
+      padding: 0 10px;
+
+      button {
+        padding: 0 !important;
+      }
+    }
+
+    .link_wrapper {
+      padding: 0 10px;
+      cursor: pointer;
+      color: $clr-dark;
+      text-decoration: none;
+
+      &:hover {
+        color: $theme-color !important;
+      }
+    }
+  }
+}
+
+.navDropdown {
+  /* background-color: lawngreen; */
+  // width: 20em;
+  // max-width: 20em;
+  display: flex;
+  justify-content: center;
+  /* background-color: lawngreen; */
+}
+
+.navItem {
+  padding: 6px 3px;
+  margin: 0em 2em;
+  cursor: pointer;
+  color: $clr-dark;
+  transition: $transition-light;
+  text-decoration: none;
+
+  &:hover {
+    color: $theme-color;
+  }
+}
+
+.activeLink {
+  color: $theme-color;
+}
+
+.ham {
+  font-size: 30px;
+  color: $theme-color;
+  display: none;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+  .menuItemArea {
+    display: none;
+  }
+
+  .nav-btns {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0 20px;
+  }
+
+  .login-btn {
+    display: none;
+  }
+
+  .navbar {
+    padding: 0em 3em;
+    align-items: center;
+    font-size: 50%;
+  }
+  .ham {
+    display: block;
+  }
+
+  .logo {
+    width: 16em;
+  }
+}
+
+.suggestion_modal_wrap {
+  .ant-modal-header {
+    background-color: $theme-color;
+    * {
+      color: #fff !important;
+    }
+  }
+  .ant-modal-title {
+    font-size: 24px;
+    line-height: 1;
+    position: relative;
+    top: -4px;
+  }
+  .ant-modal-close-x {
+    // display: none;
+    .anticon {
+      position: relative;
+      top: -4px;
+      border: solid 1px #ffffff;
+      padding: 5px;
+      border-radius: 100px;
+    }
+  }
+  .anticon svg {
+    color: #ffffff;
+    font-size: 18px;
+  }
+}
+
+.suggetion_modal {
+  h1 {
+    font-size: 18px;
+  }
+
+  .info_tag {
+    position: relative;
+    top: -20px;
+    color: $theme-color;
+  }
+}

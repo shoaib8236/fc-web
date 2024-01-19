@@ -1,0 +1,30 @@
+.faq-collapse {
+  background: none;
+  border: 0;
+  .ant-collapse-item {
+    border: 0;
+    box-shadow: 0px 0px 12px 0px #d4d4d4;
+    margin: 10px 0px;
+    border-radius: 18px !important;
+    .ant-collapse-header {
+      padding: 8px 16px;
+      padding-right: 36px;
+      text-align: left;
+
+      .ant-collapse-arrow {
+        top: 19px;
+        right: 19px;
+        svg {
+          width: 0 !important;
+          border-top: 6px solid transparent;
+          border-left: 8px solid rgba($color: $clr-dark, $alpha: 0.5);
+          border-bottom: 6px solid transparent;
+        }
+      }
+    }
+    .ant-collapse-content {
+      border-radius: 0px 0px 6px 6px;
+      border-top: 1px solid #ececec;
+    }
+  }
+}

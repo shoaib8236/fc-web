@@ -1,0 +1,31 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "TUP8UJG6SQ.com.foodchoo.rider-beta",
+        "paths": ["NOT /_/*", "/*"]
+      },
+      {
+        "appID": "TUP8UJG6SQ.com.foodchoo.rider",
+        "paths": ["NOT /_/*", "/*"]
+      },
+      {
+        "appID": "TUP8UJG6SQ.com.foodchoo.customer",
+        "paths": ["NOT /_/*", "/*"]
+      },
+      {
+        "appID": "TUP8UJG6SQ.com.project.foodchooeater",
+        "paths": ["NOT /_/*", "/*"]
+      },
+      {
+        "appID": "TUP8UJG6SQ.app.foodchoo.establishment",
+        "paths": ["NOT /_/*", "/*"]
+      },
+      {
+        "appID": "TUP8UJG6SQ.com.foodchoo.customer-beta",
+        "paths": ["NOT /_/*", "/*"]
+      }
+    ]
+  }
+}

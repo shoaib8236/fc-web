@@ -1,0 +1,89 @@
+.i-am-press {
+  min-height: calc(100vh - 432px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 25px;
+
+  .formFields {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    margin-bottom: 24px;
+    img {
+      width: 20px;
+      margin-right: 16px;
+    }
+    .ant-form-item {
+      margin-bottom: 0px;
+      flex-grow: 1;
+    }
+  }
+  h1 {
+    max-width: 1000px;
+  }
+  .header {
+    margin: 30px 0 50px;
+    font-weight: 700;
+    font-size: 35px;
+    color: #c6181f;
+    p {
+      font-size: 18px;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  .phone-row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .ant-input {
+    border-radius: 20px;
+    padding: 10px;
+    // resize:none;
+    &:focus {
+      border-color: $theme-color !important;
+      box-shadow: unset !important;
+    }
+    &:hover {
+      border-color: $theme-color !important;
+      box-shadow: unset !important;
+    }
+  }
+
+  .form-sub {
+    background-color: $theme-color;
+    border-color: transparent;
+    padding: 8px 20px;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  .form-sub-success {
+    background-color: transparent;
+    border-color: $theme-color;
+    padding: 8px 20px;
+    height: auto;
+    border-radius: 20px;
+  }
+}
+
+.sneakbar_press_wrapper {
+  min-width:300px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+ .bs_smile_ico {
+  font-size: 80px;
+  color: #2a9f2a;
+  margin-bottom:20px;
+} 
+
+h1 {
+  font-size:22px;
+  
+}
+}
